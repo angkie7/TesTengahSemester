@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Model.MainActivity">
+
+    <ImageButton
+        android:id="@+id/btnDataAdmin"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <ImageButton
+        android:id="@+id/btnDosen"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+    <ImageButton
+        android:id="@+id/btnMatkul"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:srcCompat="@android:drawable/ic_input_get" />
+
+    <ImageButton
+        android:id="@+id/btnMahasiswa"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:srcCompat="@android:drawable/ic_menu_today" />
+
+    <ImageButton
+        android:id="@+id/btnKrs"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:srcCompat="@android:drawable/ic_menu_rotate" />
+
+    <TextView
+        android:id="@+id/txtDataAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Data Diri"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDataAdmin" />
+
+    <TextView
+        android:id="@+id/txtDosen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:text="Daftar Dosen"
+        app:layout_constraintStart_toEndOf="@+id/txtDataAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/btnDosen" />
+
+    <TextView
+        android:id="@+id/txtMatkul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="10dp"
+        android:text="Daftar Matkul"
+        app:layout_constraintStart_toEndOf="@+id/txtDosen"
+        app:layout_constraintTop_toBottomOf="@+id/btnMatkul" />
+
+    <TextView
+        android:id="@+id/txtKrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="10dp"
+        android:text="Kelola KRS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnKrs" />
+
+    <TextView
+        android:id="@+id/txtMahasiswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:text="Daftar Mahasiswa"
+        app:layout_constraintStart_toEndOf="@+id/txtKrs"
+        app:layout_constraintTop_toBottomOf="@+id/btnMahasiswa" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
